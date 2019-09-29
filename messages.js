@@ -1,3 +1,3 @@
-function showAlert() {
+export function showAlert() {
   alert('Hello Word');
 }
