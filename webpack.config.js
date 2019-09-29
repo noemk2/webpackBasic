@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 //Ya no es nesesario especificar el archivo de origen y de salida con webpack
 module.exports = {
   entry: './src/app.js',
@@ -9,4 +10,9 @@ module.exports = {
     path: __dirname + '/build',
     filename: 'bundle.js',
   },
+plugins: [
+new HtmlWebpackPlugin({
+	template: './src/index.html'
+})
+]
 };
